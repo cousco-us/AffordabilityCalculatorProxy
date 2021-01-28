@@ -8,7 +8,7 @@ app.use('/', express.static('public'));
 app.use(cors());
 
 // Gallery
-app.use('/api/photoGallery', createProxyMiddleware({ target: 'http://localhost:3001', changeOrigin: true }));
+app.use('/api/photoGallery', createProxyMiddleware({ target: 'http://localhost:3002', changeOrigin: true }));
 
 // Carousel
 app.use('/api/listings', createProxyMiddleware({ target: 'http://localhost:3003', changeOrigin: true }));

@@ -1,17 +1,52 @@
 <!DOCTYPE html>
 <html>
+
   <head>
     <meta charset="utf-8">
-    <title>cousco.us proxy</title>
+    <title>Houses And Apartments For Sale In</title>
+    <link rel="icon" type="image/png" href="https://www.trulia.com/favicon.ico">
+    <style>
+      #head {
+        top: 0;
+        margin: 0;
+        padding: 0;
+        position: fixed;
+        z-index: 510000;
+        width: 100%;
+      }
 
+      .proxy-body-container{
+        padding-top: 4vw;
+      }
+
+      #filler {
+        max-width: 940px;
+        margin: auto;
+        display: block;
+      }
+    </style>
   </head>
+
   <body>
-    <div id="app"></div>
-    <div id="similarHomesCarousel"></div>
-    <div id="calculator"></div>
+    <img id='head' src='/img/head.png' />
+    <div class='proxy-body-container'>
+      <img id='filler' src='/img/crumbs.png' />
+      <div id="gallery"></div>
+      <div id="gallery-modal-root"></div>
+      <div id="photo-modal-root"></div>
+      <div id="similarHomesCarousel"></div>
+      <img id='filler' src='/img/local-info.png' />
+      <img id='filler' src='/img/home-details.png' />
+      <img id='filler' src='/img/what-locals-say.png' style='margin-bottom: -50px;' />
+      <div id="calculator"></div>
+      <img id='filler' src='/img/sponsor.png' style='margin-top: -150px;' />
+      <img id='filler' src='/img/footer.png' style='margin-top: -100px;' />
+    </div>
+
 
     <script src="http://localhost:3001/bundle.js"></script>
-    <script src="http://localhost:3002/bundle"></script>
+    <script src="http://localhost:3002/dist/bundle.js"></script>
     <script src="http://localhost:3003/bundle.js"></script>
   </body>
+
 </html>
