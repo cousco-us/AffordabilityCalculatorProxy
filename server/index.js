@@ -8,7 +8,8 @@ app.use('/', express.static('public'));
 app.use(cors());
 
 // Gallery
-app.use('/api/photoGallery', createProxyMiddleware({ target: 'http://localhost:3002', changeOrigin: true }));
+// app.use('/api/photoGallery', createProxyMiddleware({ target: 'http://localhost:3002', changeOrigin: true }));
+app.use('/api/photoGallery', createProxyMiddleware({ target: 'http://ec2-13-52-97-136.us-west-1.compute.amazonaws.com:3002/', changeOrigin: true }));
 
 // Carousel
 app.use('/api/listings', createProxyMiddleware({ target: 'http://localhost:3003', changeOrigin: true }));
